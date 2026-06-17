@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 188" width="720" height="188" role="img" aria-label="Terminal: whoami prints: Curious enough to break it, stubborn enough to fix it, lazy enough to automate it.">
+  <style>
+    text { font: 18px ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; fill: #C9D1D9; white-space: pre; }
+    .user { fill: #3FB950; font-weight: 700; }
+    .path { fill: #58A6FF; font-weight: 700; }
+    .cmd { fill: #E6EDF3; }
+    .c { fill: #58A6FF; font-weight: 700; }
+    .s { fill: #FF7B72; font-weight: 700; }
+    .l { fill: #FFA657; font-weight: 700; }
+    .cursor { fill: #C9D1D9; }
+
+    /* 10s loop: type the command, print the output, idle on a blinking prompt, clear, repeat */
+    .typer { animation: type 10s steps(6, end) infinite; }
+    .cursor1 { animation: cur1 10s step-end infinite; }
+    .o1 { animation: o1 10s step-end infinite; }
+    .o2 { animation: o2 10s step-end infinite; }
+    .o3 { animation: o3 10s step-end infinite; }
+    .prompt2 { animation: p2 10s step-end infinite; }
+    .cursor2 { animation: blink 1s step-end infinite; }
+
+    @keyframes type { 0%, 6% { transform: translateX(0); } 18%, 100% { transform: translateX(64.8px); } }
+    @keyframes cur1 { 0% { opacity: 1; } 2% { opacity: 0; } 4% { opacity: 1; } 21% { opacity: 0; } }
+    @keyframes o1 { 0% { opacity: 0; } 21% { opacity: 1; } 96% { opacity: 0; } }
+    @keyframes o2 { 0% { opacity: 0; } 23% { opacity: 1; } 96% { opacity: 0; } }
+    @keyframes o3 { 0% { opacity: 0; } 25% { opacity: 1; } 96% { opacity: 0; } }
+    @keyframes p2 { 0% { opacity: 0; } 27% { opacity: 1; } 96% { opacity: 0; } }
+    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .typer { animation: none; transform: translateX(64.8px); }
+      .cursor1 { animation: none; opacity: 0; }
+      .o1, .o2, .o3, .prompt2, .cursor2 { animation: none; opacity: 1; }
+    }
+  </style>
+
+  <!-- window -->
+  <rect x="0.5" y="0.5" width="719" height="187" rx="10" fill="#0D1117" stroke="#30363D"/>
+
+  <!-- line 1: prompt + typed command -->
+  <text x="24" y="38" textLength="108" lengthAdjust="spacing"><tspan class="user">jaravan</tspan><tspan class="path">:~</tspan>$</text>
+  <text class="cmd" x="142.8" y="38" textLength="64.8" lengthAdjust="spacing">whoami</text>
+  <g class="typer">
+    <rect x="142.8" y="18" width="180" height="28" fill="#0D1117"/>
+    <rect class="cursor cursor1" x="142.8" y="22" width="10.8" height="21"/>
+  </g>
+
+  <!-- output -->
+  <text class="o1" x="24" y="72"><tspan class="c">Curious</tspan> enough to break it</text>
+  <text class="o2" x="24" y="100"><tspan class="s">Stubborn</tspan> enough to fix it</text>
+  <text class="o3" x="24" y="128"><tspan class="l">Lazy</tspan> enough to automate it</text>
+
+  <!-- line 2: idle prompt -->
+  <g class="prompt2">
+    <text x="24" y="164" textLength="108" lengthAdjust="spacing"><tspan class="user">jaravan</tspan><tspan class="path">:~</tspan>$</text>
+    <rect class="cursor cursor2" x="142.8" y="148" width="10.8" height="21"/>
+  </g>
+</svg>
