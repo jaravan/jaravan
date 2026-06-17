@@ -1,16 +1,20 @@
-## Hi there 👋
+## Hey, I'm John 👋
 
-<!--
-**jaravan/jaravan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I architect and build enterprise systems — blockchain platforms, cloud-native infrastructure, and SAP solutions.
 
-Here are some ideas to get you started:
+I enjoy automating repetitive work, simplifying complex systems, and building resilient infrastructure.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Currently focused on
+
+🔗 Hyperledger Besu · Hyperledger Fabric · Solidity · Foundry <br>
+☁️ Kubernetes · AWS · Terraform <br>
+⚙️ GitHub Actions · GitLab CI · Helm · Bash <br>
+🔷 SAP BTP · SAP Fiori · SAP RAP · SAP CAP <br>
+🛠️ ABAP · Go · Python · Node.js <br>
+🤖 AI-assisted development: Claude Code · Cursor <br>
+
+📍 Athens, Greece 🇬🇷
+
+Outside of work you'll usually find me running, hiking, on a padel court, or playing guitar.
+
+📫 [LinkedIn](https://linkedin.com/in/john-aravanis-2647a2139)
